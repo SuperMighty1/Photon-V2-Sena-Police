@@ -33,6 +33,22 @@ VEHICLE.Equipment = {
 		}
 	},
 	{
+		Category = "Rear Window",
+		Options ={
+			{
+				Option = "Whelen Dominator",
+				Components = {
+					{
+						Component = "photon_sena_whelen_dominator_8",
+						Position = Vector( 0, -103, 73.1 ),
+						Angles = Angle( 0, 0, 0 ),
+						Scale = 1
+					}
+				}
+			}
+		}
+	},
+	{
 		Category = "Pushbar",
 		Options ={
 			{

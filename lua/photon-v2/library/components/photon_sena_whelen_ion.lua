@@ -62,14 +62,14 @@ COMPONENT.Segments = {
 
 COMPONENT.Inputs = {
 	["Emergency.Warning"] = {
-		---["MODE1"] = {
-		---	Mesh = "ON",
-		---},
-	---	["MODE2"] = {
-	---		Mesh = "ON",
-	---	},
-	-----	["MODE3"] = {
-	---		Mesh = "ON",
-	---	}
+		["MODE1"] = {
+			Mesh = "ON",
+		},
+		["MODE2"] = {
+			Mesh = "ON",
+		},
+		["MODE3"] = {
+			Mesh = "ON",
+		}
 	}
 }
