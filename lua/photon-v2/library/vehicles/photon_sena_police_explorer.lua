@@ -3,7 +3,7 @@ local VEHICLE = Photon2.LibraryVehicle()
 
 VEHICLE.Title 		= "Sena Police Explorer"
 VEHICLE.Vehicle		= "sm16fpiu"
-VEHICLE.Category 	= "Sena Police Photon 2"
+VEHICLE.Category 	= "Photon 2: Sena Police"
 VEHICLE.Author		= "SuperMighty"
 
 VEHICLE.SubMaterials = {

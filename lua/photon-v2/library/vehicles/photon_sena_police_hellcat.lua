@@ -10,7 +10,7 @@ local VEHICLE = Photon2.LibraryVehicle()
 
 VEHICLE.Title 		= "Sena Police Hellcat"
 VEHICLE.Vehicle		= "15charger_hellcat_fm2_sgm"
-VEHICLE.Category 	= "Sena Police Photon 2"
+VEHICLE.Category 	= "Photon 2: Sena Police"
 VEHICLE.Author		= "SuperMighty"
 
 VEHICLE.SubMaterials = {
