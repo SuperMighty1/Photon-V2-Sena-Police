@@ -17,7 +17,7 @@
 	"$rimlightboost" "1"
 	"$rimmask" "1"
 
-	"$phongexponenttexture" "models/supermighty/sena_police/exp"
+	"$phongexponenttexture" "photon/liveries/sena_police/exp"
 	"$phongalbedotint" "1"
 
 	"$colorfix" "{255 255 255}"
