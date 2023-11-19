@@ -2,7 +2,7 @@ if (Photon2.ReloadVehicleFile()) then return end
 local VEHICLE = Photon2.LibraryVehicle()
 
 VEHICLE.Title 		= "Sena Police Explorer"
-VEHICLE.Vehicle		= "sm16fpiu"
+VEHICLE.Vehicle		= "sm16fpiu1"
 VEHICLE.Category 	= "Photon 2: Sena Police"
 VEHICLE.Author		= "SuperMighty"
 
@@ -134,7 +134,7 @@ VEHICLE.Equipment = {
 						Angles = Angle( -17.7, -90, 0 ),
 						Scale = 1,
 						SubMaterials = {
-							[0] = "models/supermighty/sena_police/sena_plate_rear",
+							[0] = "photon/liveries/sena_police/plate/sena_plate_rear",
 						},
 					},
 					{
@@ -143,7 +143,7 @@ VEHICLE.Equipment = {
 						Angles = Angle( 0, 90, 0 ),
 						Position = Vector( 0, 117.9, 26.8 ),
                         SubMaterials = {
-							[0] = "models/supermighty/sena_police/sena_plate",
+							[0] = "photon/liveries/sena_police/plate/sena_plate_front",
 						},
 					},
 				}
