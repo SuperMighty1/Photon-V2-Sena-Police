@@ -1,10 +1,10 @@
 
 ENT.Base = "lvs_base_wheeldrive"
 
-ENT.PrintName = "crown vic"
-ENT.Author = "sgm"
+ENT.PrintName = "2016 Ford Police Interceptor Utility"
+ENT.Author = "mighters"
 ENT.Information = ""
-ENT.Category = "[LVS] SGM"
+ENT.Category = "[LVS] Mighters"
 
 ENT.Spawnable			= true -- set to "true" to make it spawnable
 ENT.AdminSpawnable		= false
@@ -12,7 +12,7 @@ ENT.AdminSpawnable		= false
 ENT.SpawnNormalOffset = 40 -- spawn normal offset, raise to prevent spawning into the ground
 --ENT.SpawnNormalOffsetSpawner = 0 -- offset for ai vehicle spawner
 
-ENT.MDL = "models/sentry/cvpi_hd.mdl"
+ENT.MDL = "models/smcars/2016_fpiu_lvs.mdl"
 --ENT.MDL_DESTROYED = "models/props_interiors/Furniture_Couch02a.mdl"
 --[[
 ENT.GibModels = {

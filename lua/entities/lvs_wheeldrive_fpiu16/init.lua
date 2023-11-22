@@ -14,8 +14,8 @@ ENT.WaterLevelDestroyAI = 2 -- at this water level (on collision) the AI will se
 -- use this instead of ENT:Initialize()
 function ENT:OnSpawn( PObj )
 	--[[ basics ]]
-	local Pod = self:AddDriverSeat( Vector(-19.4,-15,13), Angle(0,0,0) ) -- self:AddDriverSeat( Position,  Angle ) -- add a driver seat (max 1)
-	Pod.ExitPos = Vector(-80,-10,5) -- change exit position
+	local Pod = self:AddDriverSeat( Vector(-19.4,-10,28), Angle(0,0,0) ) -- self:AddDriverSeat( Position,  Angle ) -- add a driver seat (max 1)
+	Pod.ExitPos = Vector(-75,-7,5) -- change exit position
 	-- Pod.HidePlayer = true -- should the player in this pod be invisible?
 
 	-- local Pod = self:AddPassengerSeat( Position, Angle ) -- add a passenger seat (no limit)
@@ -242,8 +242,8 @@ function ENT:OnSpawn( PObj )
 			ForwardAngle = ForwardAngle,
 			SteerType = LVS.WHEEL_STEER_FRONT,
 			SteerAngle = 30,
-			TorqueFactor = 0,
-			BrakeFactor = 1,
+			TorqueFactor = 0.5,
+			BrakeFactor = 0.5,
 		},
 		Wheels = {FL,FR},
 		Suspension = {
@@ -260,8 +260,8 @@ function ENT:OnSpawn( PObj )
 		Axle = {
 			ForwardAngle = ForwardAngle,
 			SteerType = LVS.WHEEL_STEER_NONE,
-			TorqueFactor = 1,
-			BrakeFactor = 1,
+			TorqueFactor = 0.5,
+			BrakeFactor = 0.5,
 			UseHandbrake = true,
 		},
 		Wheels = {RL,RR},

@@ -29,7 +29,7 @@ COMPONENT.Templates = {
 	},
 }
 
-COMPONENT.StateMap = "[A] 1 2 3 4 5 6 7 8"
+COMPONENT.StateMap = "[R] 1 2 3 4 5 6 7 8"
 
 COMPONENT.Elements = { 
 	[1] = { "Dominator", Vector( -14.75, 0.1, 0.01 ), Angle( 0, 180, 0 ) },
