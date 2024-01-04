@@ -18,17 +18,17 @@ COMPONENT.Templates = {
 		Left = {
 			Width 	= 6.8,
 			Height	= 7,
-			Shape = PhotonDynamicMaterial.GenerateLightQuad("photon/lights/sgm_ion_left_shape.png").MaterialName,
-			Detail = PhotonDynamicMaterial.GenerateLightQuad("photon/lights/sgm_ion_left_detail.png").MaterialName,
-			Bloom = PhotonDynamicMaterial.GenerateBloomQuad("photon/lights/sgm_ion_left_bloom.png").MaterialName,
+			Shape = PhotonMaterial.GenerateLightQuad("photon/lights/sgm_ion_left_shape.png").MaterialName,
+			Detail = PhotonMaterial.GenerateLightQuad("photon/lights/sgm_ion_left_detail.png").MaterialName,
+		    -- Bloom = PhotonMaterial.GenerateBloomQuad("photon/lights/sgm_ion_left_bloom.png").MaterialName,
 			Scale = 2
 		},
         Right = {
 			Width 	= 6.8,
 			Height	= 7,
-			Shape = PhotonDynamicMaterial.GenerateLightQuad("photon/lights/sgm_ion_right_shape.png").MaterialName,
-			Detail = PhotonDynamicMaterial.GenerateLightQuad("photon/lights/sgm_ion_right_detail.png").MaterialName,
-			Bloom = PhotonDynamicMaterial.GenerateBloomQuad("photon/lights/sgm_ion_right_bloom.png").MaterialName,
+			Shape = PhotonMaterial.GenerateLightQuad("photon/lights/sgm_ion_right_shape.png").MaterialName,
+			Detail = PhotonMaterial.GenerateLightQuad("photon/lights/sgm_ion_right_detail.png").MaterialName,
+		    --	Bloom = PhotonMaterial.GenerateBloomQuad("photon/lights/sgm_ion_right_bloom.png").MaterialName,
 			Scale = 2
 		},
 	},

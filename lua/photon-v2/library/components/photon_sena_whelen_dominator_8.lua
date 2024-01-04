@@ -21,9 +21,9 @@ COMPONENT.Templates = {
 		Dominator = {
 			Width 	= 3.9,
 			Height	= 3.9,
-			Shape = PhotonDynamicMaterial.GenerateLightQuad("photon/lights/sgm_tir3_detail.png").MaterialName,
-			Detail = PhotonDynamicMaterial.GenerateLightQuad("photon/lights/sgm_tir3_detail.png").MaterialName,
-			Bloom = PhotonDynamicMaterial.GenerateBloomQuad("photon/lights/sgm_tir3_detail.png").MaterialName,
+			Shape = PhotonMaterial.GenerateLightQuad("photon/lights/sgm_tir3_detail.png").MaterialName,
+			Detail = PhotonMaterial.GenerateLightQuad("photon/lights/sgm_tir3_detail.png").MaterialName,
+			--Bloom = PhotonMaterial.GenerateBloomQuad("photon/lights/sgm_tir3_detail.png").MaterialName,
 			Scale = 0.37
 		},
 	},
