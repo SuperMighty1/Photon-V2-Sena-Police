@@ -2,7 +2,7 @@ if (Photon2.ReloadVehicleFile()) then return end
 local VEHICLE = Photon2.LibraryVehicle()
 
 VEHICLE.Title 		= "Sena Police Explorer"
-VEHICLE.Vehicle		= "sm16fpiu1"
+VEHICLE.Vehicle		= "sm16fpiu"
 VEHICLE.Category 	= "Photon 2: Sena Police"
 VEHICLE.Author		= "SuperMighty"
 

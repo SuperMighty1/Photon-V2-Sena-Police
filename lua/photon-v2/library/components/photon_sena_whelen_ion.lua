@@ -65,11 +65,5 @@ COMPONENT.Inputs = {
 		["MODE1"] = {
 			Mesh = "ON",
 		},
-		["MODE2"] = {
-			Mesh = "ON",
-		},
-		["MODE3"] = {
-			Mesh = "ON",
-		}
 	}
 }
