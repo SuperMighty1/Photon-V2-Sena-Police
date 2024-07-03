@@ -151,10 +151,22 @@ COMPONENT.Segments = {
 	},
     Brake = {
 		Frames = {
-            [1] = "[R] 15 16 11 12",
+            [1] = "[R] 11 12",
 		},
 		Sequences = {
 			ON = { 1 }
+		}
+	},
+	SignalLeft = {
+		Frames = {
+            [1] = "[A] 15",
+			[2] = "[A] 16",
+			[3] = "[A] 15 16"
+		},
+		Sequences = {
+			ON = sequence():Alternate( 1, 0, 10 ),
+			ON2 = sequence():Alternate( 2, 0, 10 ),
+			ON3 = sequence():Alternate( 3, 0, 10 ),
 		}
 	},
 	Park = {
@@ -170,15 +182,39 @@ COMPONENT.Segments = {
 
 COMPONENT.InputPriorities = {
     ["Virtual.Brake"] = 100,
+	["Virtual.Signal"] = 110,
 	["Virtual.ParkedWarning"] = 64,
 }
 COMPONENT.VirtualOutputs = {
+	["Virtual.Signal"] = {
+		{
+			Mode = "LEFT",
+			Conditions = {
+				["Vehicle.Signal"] = { "LEFT" },
+			--	["Emergency.Warning"] = { "MODE3" }
+			}
+		},
+		{
+			Mode = "RIGHT",
+			Conditions = {
+				["Vehicle.Signal"] = { "RIGHT" },
+				--["Emergency.Warning"] = { "MODE3" }
+			}
+		},
+		{
+			Mode = "HAZARD",
+			Conditions = {
+				["Vehicle.Signal"] = { "HAZARD" },
+				--["Emergency.Warning"] = { "MODE3" }
+			}
+		}
+	},
     ["Virtual.Brake"] = {
         {
             Mode = "BRAKE",
             Conditions = {
                 ["Vehicle.Brake"] = { "BRAKE" },
-                ["Emergency.Warning"] = { "MODE1", "MODE2", "MODE3" }
+                --["Emergency.Warning"] = { "MODE1", "MODE2", "MODE3" }
             }
         }
     },
@@ -204,10 +240,15 @@ COMPONENT.Inputs = {
         ["RIGHT"] = { Traffic = "RIGHT" },
         ["CENOUT"] = { Traffic = "CENOUT" },
     },
-	["Vehicle.Brake"] = {
-	},
+	--["Vehicle.Brake"] = {
+	--},
     ["Virtual.Brake"] = { 
 		["BRAKE"] = { Brake = "ON" } 
+	},
+	["Virtual.Signal"] = {
+		["LEFT"] = { SignalLeft = "ON" },
+		["RIGHT"] = { SignalLeft = "ON2" },
+		["HAZARD"] = { SignalLeft = "ON3"},
 	},
 	["Virtual.ParkedWarning"] = {
 		["MODE3"] = { Park = "ON" } 
