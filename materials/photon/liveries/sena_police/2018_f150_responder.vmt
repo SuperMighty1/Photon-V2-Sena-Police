@@ -1,7 +1,7 @@
 "VertexlitGeneric"
 {
 	
-                "$basetexture" "photon/liveries/sena_police/2018_f150_responder"
+    "$basetexture" "photon/liveries/sena_police/2018_f150_responder"
 	"$bumpmap" "models/supermighty/shared/skin_nm"
 	"$envmap" "env_cubemap"
 	"$envmaptint" "[0.3 0.3 0.3]"
